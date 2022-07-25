@@ -1,5 +1,10 @@
-package com.dda
+package com.dda.ui.newsList
 
+import com.dda.data.model.Media
+import com.dda.data.model.MediaMetaData
+import com.dda.data.remote.RestInterface
+import com.dda.data.model.NewsDetails
+import com.dda.data.model.NewsList
 import okhttp3.OkHttpClient
 import okhttp3.mockwebserver.MockWebServer
 import org.junit.After
@@ -37,9 +42,9 @@ internal open class NewsListBaseTest {
         )
         mockWebServer = MockWebServer()
         val client = OkHttpClient.Builder()
-            .connectTimeout(25, TimeUnit.SECONDS)
-            .readTimeout(25, TimeUnit.SECONDS)
-            .writeTimeout(25, TimeUnit.SECONDS)
+            .connectTimeout(1, TimeUnit.SECONDS)
+            .readTimeout(1, TimeUnit.SECONDS)
+            .writeTimeout(1, TimeUnit.SECONDS)
             .build()
 
         val api = Retrofit.Builder()

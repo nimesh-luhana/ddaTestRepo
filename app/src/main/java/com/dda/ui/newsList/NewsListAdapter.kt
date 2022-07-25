@@ -1,11 +1,13 @@
-package com.dda
+package com.dda.ui.newsList
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.dda.utils.ImageUtil
+import com.dda.data.model.NewsDetails
 import com.dda.databinding.RowNewsBinding
 
-class NewsListAdapter(var newsList: List<NewsDetails>,val onItemClick: (Int) -> Unit) :
+class NewsListAdapter(var newsList: List<NewsDetails>, val onItemClick: (Int) -> Unit) :
     RecyclerView.Adapter<NewsListAdapter.NewsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {

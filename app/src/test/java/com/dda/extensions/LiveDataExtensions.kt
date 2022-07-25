@@ -19,7 +19,7 @@ fun <T> LiveData<T>.getValueOrAwait(): T {
     }
     this.observeForever(observer)
     try {
-        if (!latch.await(25, TimeUnit.SECONDS)) {
+        if (!latch.await(2, TimeUnit.SECONDS)) {
             throw TimeoutException("Livedata did not receive the value")
         }
     } finally {

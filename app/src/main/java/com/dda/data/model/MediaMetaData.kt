@@ -1,4 +1,4 @@
-package com.dda
+package com.dda.data.model
 
 import android.os.Parcel
 import android.os.Parcelable

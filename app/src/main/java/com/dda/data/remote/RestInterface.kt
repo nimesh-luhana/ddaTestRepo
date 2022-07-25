@@ -1,5 +1,6 @@
-package com.dda
+package com.dda.data.remote
 
+import com.dda.data.model.NewsList
 import retrofit2.http.GET
 import retrofit2.http.Query
 

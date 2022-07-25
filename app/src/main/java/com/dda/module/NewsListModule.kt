@@ -1,11 +1,12 @@
-package com.dda
+package com.dda.module
 
-import android.content.Context
+import com.dda.BuildConfig
+import com.dda.ui.newsList.NewsListRepository
+import com.dda.data.remote.NetworkApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ViewModelComponent
-import dagger.hilt.android.qualifiers.ApplicationContext
 
 
 @Module

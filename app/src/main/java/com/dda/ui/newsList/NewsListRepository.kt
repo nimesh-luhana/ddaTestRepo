@@ -1,5 +1,6 @@
-package com.dda;
+package com.dda.ui.newsList;
 
+import com.dda.data.remote.RestInterface
 import javax.inject.Inject
 
 class NewsListRepository @Inject constructor(

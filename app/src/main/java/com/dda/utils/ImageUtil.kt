@@ -1,4 +1,4 @@
-package com.dda
+package com.dda.utils
 
 import android.widget.ImageView
 import com.bumptech.glide.Glide

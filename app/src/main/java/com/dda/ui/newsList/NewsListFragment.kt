@@ -1,4 +1,4 @@
-package com.dda
+package com.dda.ui.newsList
 
 import android.os.Bundle
 import android.view.LayoutInflater

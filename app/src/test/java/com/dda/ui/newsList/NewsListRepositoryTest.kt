@@ -1,5 +1,6 @@
-package com.dda
+package com.dda.ui.newsList
 
+import com.dda.enqueueResponse
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
 import org.junit.Test

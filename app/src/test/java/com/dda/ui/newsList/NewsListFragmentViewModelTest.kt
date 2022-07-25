@@ -1,18 +1,14 @@
-package com.dda
+package com.dda.ui.newsList
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
-import kotlinx.coroutines.CoroutineDispatcher
+import com.dda.TestCoroutineRule
+import com.dda.data.model.NewsList
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.test.runTest
-import org.junit.Assert
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.junit.rules.TestRule
-import org.junit.runner.RunWith
-import org.junit.runners.JUnit4
 
 @ExperimentalCoroutinesApi
 internal class NewsListFragmentViewModelTest : NewsListBaseTest() {
