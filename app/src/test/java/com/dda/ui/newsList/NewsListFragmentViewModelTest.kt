@@ -2,7 +2,6 @@ package com.dda.ui.newsList
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
-import com.dda.TestCoroutineRule
 import com.dda.data.model.NewsList
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.junit.Assert.assertEquals
@@ -17,9 +16,6 @@ internal class NewsListFragmentViewModelTest : NewsListBaseTest() {
     @get:Rule
     var rule: InstantTaskExecutorRule = InstantTaskExecutorRule()
 
-    @get:Rule
-    var mainCoroutineRule = TestCoroutineRule()
-
     @Before
     override fun setUp() {
         super.setUp()
@@ -27,7 +23,7 @@ internal class NewsListFragmentViewModelTest : NewsListBaseTest() {
     }
 
     @Test
-    fun `observe livedata for list of newsDetails successfully`() = mainCoroutineRule.runTest {
+    fun `observe livedata for list of newsDetails successfully`()  {
         newsListFragmentViewModel.getNewsList()
         newsListFragmentViewModel.newsListLD.observeForever(object :
             Observer<NewsList> {
